@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-%$%w&8c=-+*g2t3nya+0zdya@#y3!$77od@facb*a!@xsu4s3l
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'housepredict.herokuapp.com','198.211.99.20', 'localhost', '127.0.0.1'
+    'housepredict.herokuapp.com','198.211.99.20', 'localhost', '127.0.0.1','housepredict1.herokuapp.com'
 ]
 
 
