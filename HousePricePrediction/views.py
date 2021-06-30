@@ -13,7 +13,7 @@ def predict(request):
     return render(request,'predict.html')
 
 def result(request):
-    data = pd.read_csv(r'C:\Users\Sarvajeet\House\USA_Housing.csv')
+    data = pd.read_csv('USA_Housing.csv')
     data = data.drop(['Address'], axis=1)
     X = data.drop('Price', axis=1)
     Y = data['Price']
