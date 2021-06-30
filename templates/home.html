@@ -4,37 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <style>
-        h2
-        {
-            margin-top: 150px;
-            font-size: 40px;
-        }
-        h1
-        {
-            font-size: 60px;
-        }
-        input[type=submit]
-        {
-            background-color: #000000;
-            color: white;
-            cursor: pointer;
-            padding: 16px 32px;
-        }
-        body
-        {
-            background-image: url("{% static 'img1.jpg' %}");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
-<body style="text-align: center">
-<h2>Welcome to</h2>
-<h1>House Prediction System</h1>
-<form action="predict">
-    <input type="submit" value="START">
+<body>
+<div class="home">
+  <h2>Welcome to</h2>
+<h1 style="font-size: 50px">House Prediction System</h1>
+<form action="{% url 'predict' %}">
+    <button type="submit" class="home-button">START</button>
 </form>
+</div>
+
 </body>
 </html>
